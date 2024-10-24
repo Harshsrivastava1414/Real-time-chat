@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat-Realtime Node Socket.io Chat App</title>
+    <style>
+        body {
+            height: 100vh;
+            background-image: linear-gradient(rgb(255, 255, 255), rgb(109, 39, 239));
+        }
+        .logo {
+            display: block;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+        }
+        h1{
+            margin-top: 12px;
+            font-size: 30px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 955px;
+            border: 2px solid black;
+            border-radius: 13px;
+            margin: auto;
+            height: 60vh;
+            padding:33px;
+            overflow-y: auto;
+            margin-bottom: 23px;
+
+        }
+
+        .message {
+            background-color: rgb(233, 223, 223);
+            width: 24%;
+            padding: 10px;
+            margin: 17px 12px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+
+        .left {
+            float: left;
+            clear: both;
+
+        }
+
+        .right {
+            float: right;
+            clear: both;
+
+        }
+        #send-container{
+            display: block;
+            margin: auto;
+            text-align: center;
+            max-width: 1031px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #messageInp{
+            width:80%;
+            border:2px solid black;
+            border-radius: 6px;
+            height: 34px;
+            font-size: 22px;
+        }
+        .btn{
+            margin: 0 5px;
+            width: 9%;
+            cursor:pointer;
+            border: 2px solid black;
+            border-radius: 6px;
+            height: 33px;
+        }
+        
+
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="chat.png" alt="">
+        <h1>Welcome to iChat App</h1>
+    </nav>
+    <div class="container">
+        <!--<div  class="message right">harry:how are u? </div>
+        <div class="message left">rohan:how are u?</div> -->
+
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+
+        </form>
+
+    </div>
+    <script src="/socket.io/socket.io.js">
+
+    </script>
+    <script src="client/client.js">
+
+    </script>
+</body>
+
+</html>
